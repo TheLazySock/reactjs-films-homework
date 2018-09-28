@@ -1,0 +1,22 @@
+.background {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #dfb3bc;
+  animation: grad 8s linear infinite alternate;
+}
+
+@keyframes grad {
+  50% {
+    background: #a9e1e2;
+  }
+}
+
+.name {
+  color: #d83939;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+}

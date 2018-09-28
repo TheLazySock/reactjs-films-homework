@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Signature rendered with correct name 1`] = `
+<div
+  className="background"
+>
+  <h3
+    className="name"
+  >
+    Frodo Baggins
+  </h3>
+</div>
+`;
