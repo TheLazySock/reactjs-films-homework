@@ -4,9 +4,9 @@ import Signature from './components/Signature';
 
 
 const App = () => (
-  <React.Fragment>
-    <Signature name="Uladzuslau Piatrenka" />
-  </React.Fragment>
+  <div>
+    <Signature name="Uladzislau Piatrenka" />
+  </div>
 );
 
 export default App;
