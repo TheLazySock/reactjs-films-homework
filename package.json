@@ -4,7 +4,7 @@
   "description": "reactjs-films-homework",
   "scripts": {
     "start": "cross-env NODE_ENV=development node server",
-    "build": "webpack --env production",
+    "build": "webpack --config ./config/webpack/webpack.config.js --env production",
     "lint": "eslint --ext .jsx,.js ./ && stylelint ./**/*.scss",
     "test": "jest -c=config/jest/jestsetup.js",
     "prod": "npm run build && cross-env NODE_ENV=production node server"
@@ -49,6 +49,7 @@
     "jest": "^23.6.0",
     "mini-css-extract-plugin": "^0.4.2",
     "node-sass": "^4.9.3",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
     "react-test-renderer": "^16.5.1",
     "regenerator-runtime": "^0.12.1",
     "sass-loader": "^7.1.0",
