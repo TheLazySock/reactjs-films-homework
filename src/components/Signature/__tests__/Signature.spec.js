@@ -1,12 +1,14 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import ShallowRenderer from 'react-test-renderer/shallow';
 
 import Signature from '../index';
 
-
-describe('Signature', () => {
-  it('rendered with correct name', () => {
-    const output = renderer.create(<Signature name="Frodo Baggins" />);
-    expect(output).toMatchSnapshot();
+describe('App', () => {
+  const renderer = new ShallowRenderer();
+  renderer.render(<Signature name="Frodo Baggins" />);
+  it('renders correctly', () => {
+    const result = renderer.getRenderOutput();
+    expect(result.type).toBe('div');
+    expect(result.props.children).toEqual(<h3 className="name">Frodo Baggins</h3>);
   });
 });
