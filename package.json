@@ -1,0 +1,72 @@
+{
+  "name": "reactjs-films-homework",
+  "version": "1.0.0",
+  "description": "reactjs-films-homework",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development node server",
+    "build": "cross-env NODE_ENV=production webpack -p --config ./config/webpack/webpack.config.js",
+    "lint": "eslint --ext .jsx,.js ./ && stylelint ./**/*.scss",
+    "test": "jest -c=config/jest/jestsetup.js",
+    "prod": "cross-env NODE_ENV=production node server"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run lint && npm test"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.github.com:TheLazySock/reactjs-films-homework.git"
+  },
+  "author": "Uladzislau Piatrenka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheLazySock/reactjs-films-homework/issues"
+  },
+  "homepage": "https://github.com/TheLazySock/reactjs-films-homework#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.1",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^9.0.0",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^8.0.2",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-hot-loader": "^1.4.2",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^1.0.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^23.6.0",
+    "mini-css-extract-plugin": "^0.4.2",
+    "node-sass": "^4.9.3",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "react-test-renderer": "^16.5.1",
+    "regenerator-runtime": "^0.12.1",
+    "sass-loader": "^7.1.0",
+    "stylelint": "^9.5.0",
+    "stylelint-config-standard": "^18.2.0",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-merge": "^4.1.4"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "css-modules": "^0.3.0",
+    "express": "^4.16.3",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "webpack": "^4.18.1",
+    "webpack-dev-middleware": "^3.3.0",
+    "webpack-hot-middleware": "^2.24.0"
+  }
+}
