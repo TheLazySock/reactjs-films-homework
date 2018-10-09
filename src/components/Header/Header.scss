@@ -15,7 +15,7 @@
   font-size: 25px;
   font-weight: normal;
   line-height: 24px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .searchBox {
@@ -26,17 +26,17 @@
     box-sizing: border-box;
     width: 100%;
     background: transparent;
-    border: 2px solid #ffffff;
+    border: 2px solid #fff;
     border-radius: 5px;
     outline: none;
-    color: #ffffff;
+    color: #fff;
 
     &:focus {
       border-color: #e9f1ff;
     }
 
     &::placeholder {
-      color: #ffffff;
+      color: #fff;
     }
   }
 

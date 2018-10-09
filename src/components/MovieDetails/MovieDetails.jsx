@@ -1,8 +1,8 @@
 import React from 'react';
-// import style from './MovieDetails.scss';
+import style from './MovieDetails.scss';
 
 const MovieDetails = () => (
-  <section>
+  <section className={style.movieDetailsContainer}>
     {/* test */}
   </section>
 );
