@@ -1,11 +1,14 @@
 import React from 'react';
 
-import Signature from './components/Signature';
+import Header from './components/Header/Header';
+// import Footer from './components/Footer/Footer';
+import style from './style/App.scss';
 
 
 const App = () => (
-  <div>
-    <Signature name="Uladzislau Piatrenka" />
+  <div className={style.mainContainer}>
+    <Header />
+    {/* <Footer /> */}
   </div>
 );
 
