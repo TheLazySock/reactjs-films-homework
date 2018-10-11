@@ -36,7 +36,7 @@ class MovieDetailsActions extends React.Component {
 
 MovieDetailsActions.propTypes = {
   videoUrl: PropTypes.string.isRequired,
-  info: PropTypes.number.isRequired,
+  info: PropTypes.string.isRequired,
 };
 
 export default MovieDetailsActions;
