@@ -8,7 +8,7 @@ const MovieDetailsInfo = (props) => {
   const {
     title, genres, duration, rating,
   } = props;
-  const genresItems = genres.map(item => <li className={style.genresItem}>{item}</li>);
+  const genresItems = genres.map(item => <li className={style.genresItem} key={item}>{item}</li>);
 
   return (
     <div className={style.movieInfo}>

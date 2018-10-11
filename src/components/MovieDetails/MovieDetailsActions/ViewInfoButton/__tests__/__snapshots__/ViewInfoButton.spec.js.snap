@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ViewInfoButton renders properly 1`] = `
+<button
+  className="viewInfoBtn"
+  onClick={[MockFunction]}
+  type="button"
+>
+  View Info
+</button>
+`;
