@@ -1,0 +1,30 @@
+.movieDetailsActions {
+  position: relative;
+  color: white;
+}
+
+.modalInfo {
+  position: absolute;
+  margin: 0;
+  padding: 10px 15px;
+  width: 210px;
+  bottom: 60px;
+  right: -60px;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modalInfo::before {
+  position: absolute;
+  content: '';
+  left: 50%;
+  margin-left: -15px;
+  bottom: -15px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid rgba(0, 0, 0, 0.5);
+}

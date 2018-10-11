@@ -1,0 +1,35 @@
+.movieInfo {
+  color: white;
+  max-width: 60%;
+}
+
+.title {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+.genresDurationBox {
+  display: flex;
+  padding-bottom: 16px;
+  padding-top: 10px;
+  font-size: 12px;
+}
+
+.genres {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.genresItem {
+  padding-right: 16px;
+  letter-spacing: 0.5px;
+}
+
+.duration {
+  padding: 0 13px;
+  border-left: 1px solid white;
+}

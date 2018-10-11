@@ -1,9 +1,21 @@
 import React from 'react';
 import style from './MovieDetails.scss';
 
+import MovieDetailsInfo from './MovieDetailsInfo';
+import MovieDetailsActions from './MovieDetailsActions';
+
 const MovieDetails = () => (
   <section className={style.movieDetailsContainer}>
-    {/* test */}
+    <MovieDetailsInfo
+      title="The jungle book"
+      genres={['Adventure', 'Drama', 'Family', 'Fantasy']}
+      duration="1h 46m"
+      rating={4.8}
+    />
+    <MovieDetailsActions
+      videoUrl="https://"
+      info="There are growing dangers in the wozarding world of 1926 New York. Something musterious is leaving a path of destruction in the streets, threating to expose the wizarding"
+    />
   </section>
 );
 

@@ -1,4 +1,19 @@
+.footer {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 130px;
+}
+
 .filmsText {
-  color: blue;
-  font-size: 45px;
+  color: #0aaee4;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.copirying {
+  color: #a8a8a8;
+  margin-bottom: 15px;
 }
