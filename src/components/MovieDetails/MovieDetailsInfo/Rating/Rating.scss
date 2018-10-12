@@ -14,8 +14,24 @@
   color: #0aaee4;
 }
 
-.star {
+%star {
   padding-right: 5px;
+}
+
+.filledStar {
+  @extend %star;
+
+  &:after {
+    content: '\2605';
+  }
+}
+
+.emptyStar {
+  @extend %star;
+
+  &:after {
+    content: '\2606';
+  }
 }
 
 .ratingAverage {
