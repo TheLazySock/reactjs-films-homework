@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Genres renders properly 1`] = `
+<ul
+  className="genres"
+>
+  <li
+    className="genresItem"
+  >
+    Action
+  </li>
+  <li
+    className="genresItem"
+  >
+    Drama
+  </li>
+</ul>
+`;
