@@ -14,22 +14,18 @@
   color: #0aaee4;
 }
 
-%star {
-  padding-right: 5px;
-}
-
 .filledStar {
-  @extend %star;
+  padding-right: 5px;
 
-  &:after {
+  &::after {
     content: '\2605';
   }
 }
 
 .emptyStar {
-  @extend %star;
+  padding-right: 5px;
 
-  &:after {
+  &::after {
     content: '\2606';
   }
 }

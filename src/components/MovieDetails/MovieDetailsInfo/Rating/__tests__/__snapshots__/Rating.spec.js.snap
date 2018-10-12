@@ -8,40 +8,20 @@ exports[`Rating renders properly 1`] = `
     className="starsList"
   >
     <li
-      className="star"
-    >
-      <span>
-        ★
-      </span>
-    </li>
+      className="filledStar"
+    />
     <li
-      className="star"
-    >
-      <span>
-        ★
-      </span>
-    </li>
+      className="filledStar"
+    />
     <li
-      className="star"
-    >
-      <span>
-        ★
-      </span>
-    </li>
+      className="filledStar"
+    />
     <li
-      className="star"
-    >
-      <span>
-        ☆
-      </span>
-    </li>
+      className="emptyStar"
+    />
     <li
-      className="star"
-    >
-      <span>
-        ☆
-      </span>
-    </li>
+      className="emptyStar"
+    />
   </ul>
   <span
     className="ratingAverage"
