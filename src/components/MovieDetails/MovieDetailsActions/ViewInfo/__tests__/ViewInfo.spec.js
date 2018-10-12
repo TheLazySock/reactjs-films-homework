@@ -6,9 +6,9 @@ import ViewInfoButton from '../index';
 describe('ViewInfoButton', () => {
   it('renders properly', () => {
     const renderer = new ShallowRenderer();
-    renderer.render(<ViewInfoButton onClick={jest.fn()} />);
+    renderer.render(<ViewInfoButton onClick={jest.fn()} info="info" />);
     const output = renderer.getRenderOutput();
-    expect(output.type).toBe('button');
+    expect(output.type).toBe('div');
     expect(output).toMatchSnapshot();
   });
 });

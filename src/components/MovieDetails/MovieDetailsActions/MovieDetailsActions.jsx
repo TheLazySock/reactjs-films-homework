@@ -3,32 +3,16 @@ import PropTypes from 'prop-types';
 import style from './MovieDetailsActions.scss';
 
 import WatchNowButton from './WatchNowButton';
-import ViewInfoButton from './ViewInfoButton';
+import ViewInfo from './ViewInfo';
 
 class MovieDetailsActions extends React.Component {
-  state = {
-    isInfoShown: false,
-  }
-
-  handleShowInfo = () => {
-    this.setState(prevState => ({ isInfoShown: !prevState.isInfoShown }));
-  }
-
   render() {
     const { videoUrl, info } = this.props;
-    const { isInfoShown } = this.state;
 
     return (
       <div className={style.movieDetailsActions}>
         <WatchNowButton videoUrl={videoUrl} />
-        <ViewInfoButton onClick={this.handleShowInfo} />
-        {
-          isInfoShown && (
-            <div>
-              <p className={style.modalInfo}>{info}</p>
-            </div>
-          )
-        }
+        <ViewInfo onClick={this.handleShowInfo} info={info} />
       </div>
     );
   }

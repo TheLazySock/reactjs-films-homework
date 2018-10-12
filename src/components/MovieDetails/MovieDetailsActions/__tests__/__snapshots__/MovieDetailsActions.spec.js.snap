@@ -10,13 +10,17 @@ exports[`MovieDetailsActions renders correctly 1`] = `
   >
     Watch Now
   </button>
-  <button
-    className="viewInfoBtn"
-    onClick={[Function]}
-    type="button"
+  <div
+    className="viewInfoContainer"
   >
-    View Info
-  </button>
+    <button
+      className="viewInfoBtn"
+      onClick={[Function]}
+      type="button"
+    >
+      View Info
+    </button>
+  </div>
 </div>
 `;
 
@@ -30,19 +34,23 @@ exports[`MovieDetailsActions show description on button click 1`] = `
   >
     Watch Now
   </button>
-  <button
-    className="viewInfoBtn"
-    onClick={[Function]}
-    type="button"
+  <div
+    className="viewInfoContainer"
   >
-    View Info
-  </button>
-  <div>
-    <p
-      className="modalInfo"
+    <div>
+      <p
+        className="modalInfo"
+      >
+        info
+      </p>
+    </div>
+    <button
+      className="viewInfoBtn"
+      onClick={[Function]}
+      type="button"
     >
-      info
-    </p>
+      View Info
+    </button>
   </div>
 </div>
 `;
