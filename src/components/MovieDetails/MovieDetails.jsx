@@ -8,7 +8,6 @@ const MovieDetails = () => (
   <section className={style.movieDetailsContainer}>
     <MovieDetailsInfo
       title="The jungle book"
-      genres={['Adventure', 'Drama', 'Family', 'Fantasy']}
       duration="1h 46m"
       rating={4.8}
     />

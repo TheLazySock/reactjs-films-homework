@@ -24,9 +24,13 @@ const MovieDetailsInfo = (props) => {
   );
 };
 
+MovieDetailsInfo.defaultProps = {
+  genres: ['Adventure', 'Drama', 'Family', 'Fantasy'],
+};
+
 MovieDetailsInfo.propTypes = {
   title: PropTypes.string.isRequired,
-  genres: PropTypes.arrayOf(PropTypes.string).isRequired,
+  genres: PropTypes.arrayOf(PropTypes.string),
   duration: PropTypes.string.isRequired,
   rating: PropTypes.number.isRequired,
 };
