@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders properly 1`] = `
+<button
+  className="cls"
+  onClick={[Function]}
+  type="button"
+>
+  btn
+</button>
+`;
+
+exports[`Button show description on button click 1`] = `
+<button
+  className="cls"
+  onClick={[Function]}
+  type="button"
+>
+  btn
+</button>
+`;

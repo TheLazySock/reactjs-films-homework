@@ -4,53 +4,13 @@ exports[`MovieDetailsActions renders correctly 1`] = `
 <div
   className="movieDetailsActions"
 >
-  <button
-    className="watchVideoBtn"
-    type="button"
-  >
-    Watch Now
-  </button>
-  <div
-    className="viewInfoContainer"
-  >
-    <button
-      className="viewInfoBtn"
-      onClick={[Function]}
-      type="button"
-    >
-      View Info
-    </button>
-  </div>
-</div>
-`;
-
-exports[`MovieDetailsActions show description on button click 1`] = `
-<div
-  className="movieDetailsActions"
->
-  <button
-    className="watchVideoBtn"
-    type="button"
-  >
-    Watch Now
-  </button>
-  <div
-    className="viewInfoContainer"
-  >
-    <div>
-      <p
-        className="modalInfo"
-      >
-        info
-      </p>
-    </div>
-    <button
-      className="viewInfoBtn"
-      onClick={[Function]}
-      type="button"
-    >
-      View Info
-    </button>
-  </div>
+  <Button
+    buttonClass="watchVideoBtn"
+    onClick={[Function]}
+    title="Watch Now"
+  />
+  <ViewInfo
+    info="info"
+  />
 </div>
 `;

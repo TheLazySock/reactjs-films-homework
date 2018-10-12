@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import style from './ViewInfo.scss';
 
+import Button from '../../../Button';
+
 class ViewInfo extends React.Component {
   state = {
     isInfoShown: false,
@@ -24,7 +26,7 @@ class ViewInfo extends React.Component {
             </div>
           )
         }
-        <button type="button" className={style.viewInfoBtn} onClick={this.handleShowInfo}>View Info</button>
+        <Button buttonClass="viewInfoBtn" onClick={this.handleShowInfo} title="View Info" />
       </div>
     );
   }

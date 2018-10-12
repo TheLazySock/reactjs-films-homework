@@ -19,7 +19,6 @@ describe('MovieDetails', () => {
         rating={4.8}
       />,
       <MovieDetailsActions
-        videoUrl="https://"
         info="There are growing dangers in the wozarding world of 1926 New York.
           Something musterious is leaving a path of destruction in the streets, threating to expose the wizarding"
       />,

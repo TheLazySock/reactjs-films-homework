@@ -2,24 +2,21 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import style from './MovieDetailsActions.scss';
 
-import WatchNowButton from './WatchNowButton';
+import Button from '../../Button';
 import ViewInfo from './ViewInfo';
 
-class MovieDetailsActions extends React.Component {
-  render() {
-    const { videoUrl, info } = this.props;
+const MovieDetailsActions = (props) => {
+  const { info } = props;
 
-    return (
-      <div className={style.movieDetailsActions}>
-        <WatchNowButton videoUrl={videoUrl} />
-        <ViewInfo onClick={this.handleShowInfo} info={info} />
-      </div>
-    );
-  }
-}
+  return (
+    <div className={style.movieDetailsActions}>
+      <Button buttonClass="watchVideoBtn" title="Watch Now" />
+      <ViewInfo info={info} />
+    </div>
+  );
+};
 
 MovieDetailsActions.propTypes = {
-  videoUrl: PropTypes.string.isRequired,
   info: PropTypes.string.isRequired,
 };
 

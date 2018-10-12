@@ -1,14 +1,21 @@
 import React from 'react';
 import ShallowRenderer from 'react-test-renderer/shallow';
+import renderer from 'react-test-renderer';
 
-import ViewInfoButton from '../index';
+import ViewInfo from '../index';
 
-describe('ViewInfoButton', () => {
+describe('ViewInfo', () => {
   it('renders properly', () => {
-    const renderer = new ShallowRenderer();
-    renderer.render(<ViewInfoButton onClick={jest.fn()} info="info" />);
-    const output = renderer.getRenderOutput();
+    const shallowRenderer = new ShallowRenderer();
+    shallowRenderer.render(<ViewInfo onClick={jest.fn()} info="info" />);
+    const output = shallowRenderer.getRenderOutput();
     expect(output.type).toBe('div');
+    expect(output).toMatchSnapshot();
+  });
+
+  it('show description on button click', () => {
+    const output = renderer.create(<ViewInfo videoUrl="https://" info="info" />);
+    output.root.findByProps({ className: 'viewInfoBtn' }).props.onClick();
     expect(output).toMatchSnapshot();
   });
 });
