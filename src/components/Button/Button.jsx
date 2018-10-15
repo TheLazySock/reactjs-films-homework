@@ -2,18 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import style from './Button.scss';
 
-const Button = (props) => {
-  const { title, buttonClass, onClick } = props;
-  return (
-    <button
-      type="button"
-      className={style[buttonClass]}
-      onClick={onClick}
-    >
-      {title}
-    </button>
-  );
-};
+const Button = ({ title, buttonClass, onClick }) => (
+  <button
+    type="button"
+    className={style[buttonClass]}
+    onClick={onClick}
+  >
+    {title}
+  </button>
+);
 
 Button.defaultProps = {
   onClick: () => { console.log('clicked'); },
