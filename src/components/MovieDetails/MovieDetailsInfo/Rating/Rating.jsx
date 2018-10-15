@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import style from './Rating.scss';
 
-const Rating = (props) => {
-  const { rating } = props;
+const Rating = ({ rating }) => {
   const stars = Array.from(
     Array(5),
     (elem, i) => <li className={style.filledStar} key={`filled-${i}`} />,
