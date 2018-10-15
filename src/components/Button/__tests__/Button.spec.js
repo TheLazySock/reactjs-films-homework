@@ -11,7 +11,6 @@ describe('Button', () => {
 
   it('show description on button click', () => {
     const output = renderer.create(<Button title="btn" buttonClass="cls" />);
-    // console.log(output.root.findByType('button'));
     output.root.findByType('button').props.onClick();
     expect(output).toMatchSnapshot();
   });
