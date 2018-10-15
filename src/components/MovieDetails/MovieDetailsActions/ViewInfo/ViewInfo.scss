@@ -1,0 +1,47 @@
+.viewInfoContainer {
+  position: relative;
+}
+
+.viewInfoBtn {
+  padding: 7px 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #000;
+
+  &:hover {
+    background-color: #313131;
+  }
+
+  &:active {
+    background-color: #000;
+  }
+}
+
+.modalInfo {
+  position: absolute;
+  margin: 0;
+  padding: 10px 15px;
+  width: 210px;
+  bottom: 60px;
+  right: -70px;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  &::before {
+    position: absolute;
+    content: '';
+    left: 50%;
+    margin-left: -15px;
+    bottom: -15px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid rgba(0, 0, 0, 0.5);
+  }
+}

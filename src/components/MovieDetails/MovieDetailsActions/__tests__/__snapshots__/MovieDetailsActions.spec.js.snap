@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieDetailsActions renders correctly 1`] = `
+<div
+  className="movieDetailsActions"
+>
+  <Button
+    buttonClass="watchVideoBtn"
+    onClick={[Function]}
+    title="Watch Now"
+  />
+  <ViewInfo
+    info="info"
+  />
+</div>
+`;

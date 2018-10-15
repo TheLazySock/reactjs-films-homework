@@ -1,0 +1,36 @@
+.viewInfoBtn {
+  padding: 7px 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #000;
+
+  &:hover {
+    background-color: #313131;
+  }
+
+  &:active {
+    background-color: #000;
+  }
+}
+
+.watchVideoBtn {
+  padding: 7px 15px;
+  margin-right: 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #0aaee4;
+
+  &:hover {
+    background-color: lighten(#0aaee4, 15%);
+  }
+
+  &:active {
+    background-color: #0aaee4;
+  }
+}
