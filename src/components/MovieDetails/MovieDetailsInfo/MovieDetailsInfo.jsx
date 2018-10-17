@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import style from './MovieDetailsInfo.scss';
 
 import Rating from './Rating';
-import Genres from './Genres';
+import Genres from '../../Genres';
 
 const MovieDetailsInfo = ({
   title, genres, duration, rating,
